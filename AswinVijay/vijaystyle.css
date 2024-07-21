@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000020;
+    
+}
+div{
+    margin: 30px;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+}
+.box-1{
+    animation: width 2s linear infinite alternate;
+}
+@keyframes width{
+        0%{
+            width: 100px;
+            
+        }
+        50%{
+            background-color: red;
+        }
+        
+        100%{
+            width: 1000px;
+            background-color: aqua;
+        }
+}
+.box-2{
+    transform: translateX(0px);
+    animation: tran  2s  linear infinite alternate;
+}
+@keyframes tran{
+    0%{
+        transform: translateX(0px);
+        background-color: white;
+    }
+    100%{
+        transform: translate(900px);
+        background-color: red;
+    }
+}
